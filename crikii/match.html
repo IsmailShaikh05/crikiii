@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Match Setup</title>
+  <link rel="stylesheet" href="match1.css" />
+</head>
+<body>
+
+  <nav class="navbar">
+    <div class="logo">🏏 Cricket 2⚾25</div>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="addplayer.html">Create Team</a></li>
+      <li><a href="11.html">Playing 11</a></li>
+      <li><a href="coin.html">Toss</a></li>
+      <li><a href="match2.html">Choice</a></li>
+      <li><a href="match3.html">Live Match</a></li>i>
+    </ul>
+  </nav>
+
+
+  
+  <div class="container">
+    <h1>Match Setup</h1>
+    <div class="team-section">
+      <label>Team A Name:</label>
+      <input type="text" id="teamAName" placeholder="Team A" />
+      <label>Select Captain:</label>
+      <select id="teamACaptain">
+        <option disabled selected value="">--Select Captain--</option>
+      </select>
+    </div>
+
+    <div class="team-section">
+      <label>Team B Name:</label>
+      <input type="text" id="teamBName" placeholder="Team B" />
+      <label>Select Captain:</label>
+      <select id="teamBCaptain">
+        <option disabled selected value="">--Select Captain--</option>
+      </select>
+    </div>
+
+    <div class="overs-section">
+      <label>Total Overs:</label>
+      <input type="number" id="overs" min="1" placeholder="Enter overs" />
+    </div>
+
+    <button id="proceedBtn">Proceed to Match Start</button>
+  </div>
+
+  <script src="match1.js"></script>
+</body>
+</html>

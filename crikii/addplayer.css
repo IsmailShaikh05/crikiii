@@ -1,0 +1,146 @@
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #f2f2f2;
+}
+header {
+  height: 100vh;
+  position: relative;
+}
+
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 60px;
+  background: rgba(0, 0, 0, 0.622);
+  backdrop-filter: blur(5px);
+}
+
+
+.logo {
+  font-size: 28px;
+  color: #ffffff;
+  font-weight: bold;
+  text-shadow: 0 0 5px #000;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 25px;
+}
+
+.nav-links li a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 18px;
+  transition: 0.3s ease;
+}
+
+.nav-links li a:hover {
+  color: #ffcc00;
+  text-shadow: 0 0 10px #ffcc00;
+}
+
+.player-form-section,
+.player-list-section {
+  max-width: 600px;
+  margin: 40px auto;
+  padding: 20px;
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+input {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  margin: 12px 0;
+  font-size: 16px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+}
+
+.add-btn {
+  background-color: #28a745;
+  color: white;
+  border: none;
+  padding: 12px;
+  width: 100%;
+  font-size: 16px;
+  border-radius: 6px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.add-btn:hover {
+  background-color: #218838;
+}
+
+ul#playerList {
+  list-style: none;
+  padding: 0;
+}
+
+ul#playerList li {
+  display: flex;
+  justify-content: space-between;
+  background: #e9ecef;
+  padding: 10px 15px;
+  margin: 8px 0;
+  border-radius: 6px;
+}
+
+.remove-btn {
+  background-color: #dc3545;
+  border: none;
+  color: white;
+  padding: 4px 10px;
+  font-size: 14px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.remove-btn:hover {
+  background-color: #bd2130;
+}
+
+.generate-btn {
+  margin-top: 20px;
+  width: 100%;
+  background-color: #007bff;
+  color: white;
+  padding: 14px;
+  font-size: 16px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.generate-btn:hover {
+  background-color: #0069d9;
+}
+
+
+/* Mobile responsive layout */
+@media (max-width: 600px) {
+    body {
+        padding: 10px;
+        font-size: 16px;
+    }
+    .container, .card, .player, .scoreboard, .section {
+        width: 100% !important;
+        flex-direction: column !important;
+    }
+    button, .btn {
+        width: 100% !important;
+        margin-bottom: 10px;
+        font-size: 1.1rem;
+    }
+    table {
+        font-size: 0.9rem;
+    }
+}

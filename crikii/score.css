@@ -1,0 +1,92 @@
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background: linear-gradient(to right, #e0f7fa, #e0f2f1);
+  margin: 0;
+  padding: 20px;
+}
+
+.container {
+  max-width: 800px;
+  margin: auto;
+  text-align: center;
+}
+
+h1 {
+  font-size: 2rem;
+  color: #00695c;
+}
+
+.scorecards {
+  margin-top: 20px;
+}
+
+.card {
+  background: white;
+  border-radius: 15px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+  margin: 20px 0;
+  padding: 20px;
+  text-align: left;
+}
+
+.card h2 {
+  color: #004d40;
+}
+
+.card table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 10px;
+}
+
+.card th, .card td {
+  padding: 8px;
+  border-bottom: 1px solid #ddd;
+  text-align: left;
+}
+
+#playerOfMatch {
+  color: #00796b;
+  margin-top: 30px;
+}
+
+.buttons {
+  margin-top: 30px;
+}
+
+button {
+  background-color: #00796b;
+  color: white;
+  padding: 12px 20px;
+  margin: 0 10px;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+button:hover {
+  background-color: #004d40;
+}
+
+
+/* Mobile responsive layout */
+@media (max-width: 600px) {
+    body {
+        padding: 10px;
+        font-size: 16px;
+    }
+    .container, .card, .player, .scoreboard, .section {
+        width: 100% !important;
+        flex-direction: column !important;
+    }
+    button, .btn {
+        width: 100% !important;
+        margin-bottom: 10px;
+        font-size: 1.1rem;
+    }
+    table {
+        font-size: 0.9rem;
+    }
+}

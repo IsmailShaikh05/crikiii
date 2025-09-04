@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Add Players - CricketX Arena</title>
+  <link rel="stylesheet" href="addplayer.css" />
+</head>
+<body>
+  <nav class="navbar">
+    <div class="logo">🏏 Cricket 2⚾25</div>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="addplayer.html">Create Team</a></li>
+      <li><a href="11.html">Playing 11</a></li>
+      <li><a href="coin.html">Toss</a></li>
+      <li><a href="match2.html">Choice</a></li>
+      <li><a href="match3.html">Live Match</a></li>
+    </ul>
+  </nav>
+
+  <section class="player-form-section">
+    <h2>Add Player</h2>
+    <form id="playerForm">
+      <input type="text" id="playerName" placeholder="Player Name" required />
+      <input type="number" id="batRating" placeholder="Batting Rating (0-10)" required min="0" max="10"/>
+      <input type="number" id="bowlRating" placeholder="Bowling Rating (0-10)" required min="0" max="10"/>
+      <button type="submit" class="add-btn">➕ Add Player</button>
+    </form>
+  </section>
+
+  <section class="player-list-section">
+    <h3>Added Players</h3>
+    <ul id="playerList"></ul>
+    <button id="generateTeamsBtn" class="generate-btn">Generate Teams</button>
+  </section>
+
+  <script src="addplayer.js"></script>
+</body>
+</html>

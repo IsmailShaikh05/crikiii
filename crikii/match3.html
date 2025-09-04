@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Live Match</title>
+  <link rel="stylesheet" href="match3.css" />
+</head>
+<body>
+  <nav class="navbar">
+    <div class="logo">🏏 Cricket 2⚾25</div>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="addplayer.html">Create Team</a></li>
+      <li><a href="11.html">Playing 11</a></li>
+      <li><a href="coin.html">Toss</a></li>
+      <li><a href="match2.html">Choice</a></li>
+      <li><a href="match3.html">Live Match</a></li>i>
+    </ul>
+  </nav>
+
+  <div class="container">
+    <h2 id="matchTitle">Live Match</h2>
+
+    <div class="selectors">
+      <div>
+        <label>Striker:</label>
+        <select id="strikerSelect"></select>
+      </div>
+      <div>
+        <label>Non-Striker:</label>
+        <select id="nonStrikerSelect"></select>
+      </div>
+      <div>
+        <label>Bowler:</label>
+        <select id="bowlerSelect"></select>
+      </div>
+    </div>
+
+    <div class="scoreboard">
+      <p id="score">0 / 0</p>
+      <p id="overs">Overs: 0.0</p>
+      <p id="recent">Recent: </p>
+    </div>
+
+    <div class="score-buttons">
+      <button data-run="0">0</button>
+      <button data-run="1">1</button>
+      <button data-run="2">2</button>
+      <button data-run="3">3</button>
+      <button data-run="4">4</button>
+      <button data-run="6">6</button>
+      <button data-run="WD">WD</button>
+      <button data-run="NB">NB</button>
+      <button data-run="W">W</button>
+    </div>
+
+    <div>
+      <button id="nextInningsBtn" style="display: none;" onclick="window.location.href='score.html'">Start 2nd Innings</button>
+    </div>
+  </div>
+
+  <script src="match3.js"></script>
+</body>
+</html>

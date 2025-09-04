@@ -1,0 +1,125 @@
+body {
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+    background: #f2f2f2;
+  }
+  
+  header {
+    height: 100vh;
+    position: relative;
+  }
+  
+  
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 60px;
+    background:  rgba(0, 0, 0, 0.622);
+    backdrop-filter: blur(5px);
+  }
+  
+  
+  .logo {
+    font-size: 28px;
+    color: #ffffff;
+    font-weight: bold;
+    text-shadow: 0 0 5px #000;
+  }
+  
+  .nav-links {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+  }
+  
+  .nav-links li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 18px;
+    transition: 0.3s ease;
+  }
+  
+  .nav-links li a:hover {
+    color: #ffcc00;
+    text-shadow: 0 0 10px #ffcc00;
+  }
+  
+  
+  .team-section {
+    max-width: 900px;
+    margin: 30px auto;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .teams-container {
+    display: flex;
+    justify-content: space-around;
+    gap: 30px;
+    flex-wrap: wrap;
+    margin-top: 20px;
+  }
+  
+  .team-card {
+    flex: 1;
+    min-width: 300px;
+    background: white;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .team-card h3 {
+    margin-bottom: 15px;
+    color: #007bff;
+  }
+  
+  .team-card ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .team-card li {
+    background-color: #e9ecef;
+    margin: 6px 0;
+    padding: 8px;
+    border-radius: 6px;
+    font-weight: 500;
+  }
+  
+  .next-btn {
+    margin-top: 30px;
+    padding: 14px 30px;
+    font-size: 16px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+  }
+  
+  .next-btn:hover {
+    background-color: #218838;
+  }
+  
+
+/* Mobile responsive layout */
+@media (max-width: 600px) {
+    body {
+        padding: 10px;
+        font-size: 16px;
+    }
+    .container, .card, .player, .scoreboard, .section {
+        width: 100% !important;
+        flex-direction: column !important;
+    }
+    button, .btn {
+        width: 100% !important;
+        margin-bottom: 10px;
+        font-size: 1.1rem;
+    }
+    table {
+        font-size: 0.9rem;
+    }
+}

@@ -1,0 +1,163 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Roboto:wght@400;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Rubik', sans-serif ;
+}
+
+body { 
+    height: 100%;
+    background:linear-gradient(135deg, #0f2027, #203a43, #aad9ed);
+}
+header {
+    height: 100vh;
+    position: relative;
+  }
+  
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 60px;
+    background: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(5px);
+  }
+
+  
+  .logo {
+    font-size: 28px;
+    color: #ffffff;
+    font-weight: bold;
+    text-shadow: 0 0 5px #000;
+  }
+  
+  .nav-links {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+  }
+  
+  .nav-links li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 18px;
+    transition: 0.3s ease;
+  }
+  
+  .nav-links li a:hover {
+    color: #ffcc00;
+    text-shadow: 0 0 10px #ffcc00;
+  }
+  
+.container {
+    background:#fff;
+    width: 400px;
+    padding: 50px;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+    box-shadow: 15px 30px 35px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    -webkit-perspective: 300px;
+    perspective: 300px;
+}
+
+.stats{
+    text-align: right;
+    color: #101020;
+    font-weight: 700;
+    line-height: 25px;
+}
+
+.coin{
+    height: 150px;
+    width: 150px;
+    position: relative;
+    margin: 50px auto;
+    -webkit-transform-style: preserve-3d;
+    transform-style: preserve-3d; 
+}
+
+.tails{
+    transform: rotateX(180deg);
+}
+
+.buttons{
+    display: flex;
+    justify-content: space-between;
+}
+
+.coin img{
+    width: 145px;
+}
+
+.heads, .tails{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
+}    
+
+button{
+    width: 120px;
+    padding: 10px;
+    border: 2.5px solid rgb(7, 87, 113);
+    border-radius: 5px;
+    cursor: pointer;
+    background: #ffffff;
+}
+
+#flip-button:disabled{
+    background-color: rgb(23, 104, 132);
+    color: #fff;
+    border-color: #ffffff;
+}
+
+#btn{
+    background: #fff;
+    color: black;
+}
+
+@keyframes spin-tails{
+    0%{
+        transform: rotatex(0);
+    }
+    100%{
+        transform: rotateX(1980deg);
+    }
+
+}
+
+@keyframes spin-heads{
+    0%{
+        transform:rotateX(0);
+    }
+    100%{
+        transform:rotateX(2160deg);
+    }
+}
+
+/* Mobile responsive layout */
+@media (max-width: 600px) {
+    body {
+        padding: 10px;
+        font-size: 16px;
+    }
+    .container, .card, .player, .scoreboard, .section {
+        width: 100% !important;
+        flex-direction: column !important;
+    }
+    button, .btn {
+        width: 100% !important;
+        margin-bottom: 10px;
+        font-size: 1.1rem;
+    }
+    table {
+        font-size: 0.9rem;
+    }
+}

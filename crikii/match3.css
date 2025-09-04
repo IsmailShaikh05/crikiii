@@ -1,0 +1,180 @@
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  background: linear-gradient(to right, #e0f7fa, #fff);
+  color: #333;
+  padding: 20px;
+}
+
+/* Navbar */
+.navbar {
+  background-color: #004d40;
+  padding: 15px 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
+.logo {
+  font-size: 24px;
+  color: white;
+  font-weight: bold;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.nav-links li a {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+  padding: 8px 12px;
+  transition: background 0.3s ease;
+  border-radius: 6px;
+}
+
+.nav-links li a:hover {
+  background-color: #00695c;
+}
+
+/* Container */
+.container {
+  max-width: 900px;
+  margin: 40px auto;
+  padding: 30px;
+  background: white;
+  border-radius: 16px;
+  box-shadow: 0 8px 24px rgba(0,0,0,0.1);
+}
+
+/* Match Title */
+#matchTitle {
+  text-align: center;
+  margin-bottom: 30px;
+  font-size: 28px;
+  color: #004d40;
+  font-weight: bold;
+}
+
+/* Selectors Layout */
+.selectors {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-bottom: 30px;
+  gap: 20px;
+}
+
+.selectors div {
+  flex: 1;
+  min-width: 200px;
+}
+
+.selectors label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: bold;
+  color: #00796b;
+}
+
+.selectors select {
+  width: 100%;
+  padding: 10px 12px;
+  border: 2px solid #004d40;
+  border-radius: 10px;
+  background: #f1f8e9;
+  font-size: 16px;
+  transition: border 0.2s ease;
+}
+
+.selectors select:focus {
+  border-color: #00796b;
+  outline: none;
+}
+
+/* Score Info & Buttons */
+.score-info {
+  margin-top: 20px;
+  text-align: left;
+  font-size: 16px;
+  font-weight: 500;
+  color: #004d40;
+}
+
+.score-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 18px;
+  justify-content: center;
+  margin-top: 15px;
+}
+
+.score-buttons button {
+  width: 65px;
+  height: 65px;
+  font-size: 20px;
+  font-weight: bold;
+  background-color: #00796b;
+  color: white;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: 0.2s ease;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.score-buttons button:hover {
+  background-color: #004d40;
+  transform: scale(1.05);
+}
+
+/* Second Innings Button */
+.container > div > button {
+  display: block;
+  margin: 30px auto 0;
+  padding: 12px 30px;
+  font-size: 16px;
+  background-color: #00796b;
+  color: white;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.container > div > button:hover {
+  background-color: #004d40;
+}
+
+
+/* Mobile responsive layout */
+@media (max-width: 600px) {
+    body {
+        padding: 10px;
+        font-size: 16px;
+    }
+    .container, .card, .player, .scoreboard, .section {
+        width: 100% !important;
+        flex-direction: column !important;
+    }
+    button, .btn {
+        width: 100% !important;
+        margin-bottom: 10px;
+        font-size: 1.1rem;
+    }
+    table {
+        font-size: 0.9rem;
+    }
+}
